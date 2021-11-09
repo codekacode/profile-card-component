@@ -1,0 +1,37 @@
+body {
+  background-color: #1ba1ad;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif; }
+  body .card {
+    background-color: #fff;
+    width: 300px;
+    height: 350px;
+    border-radius: 12px; }
+    body .card .card-header {
+      height: 30%;
+      background-image: url(/images/bg-pattern-card.svg);
+      background-size: contain;
+      border-radius: 12px 12px 0 0; }
+    body .card img {
+      border-radius: 50%;
+      border: 2px solid #fff;
+      position: relative;
+      top: -50px;
+      left: 30%; }
+
+.card-personal-info {
+  color: #505055; }
+
+.card-social-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 1em; }
+  .card-social-info div {
+    text-align: center; }
+    .card-social-info div p {
+      font-size: .6em;
+      text-transform: uppercase;
+      color: #505055; }
+
+/*# sourceMappingURL=style.css.map */
