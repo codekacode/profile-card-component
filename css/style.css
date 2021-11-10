@@ -1,37 +1,96 @@
 body {
-  background-color: #1ba1ad;
+  background-color: #1BA1AD ;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
   display: flex;
+  align-items: center;
   justify-content: center;
-  font-family: 'Kumbh Sans', sans-serif; }
-  body .card {
-    background-color: #fff;
-    width: 300px;
-    height: 350px;
-    border-radius: 12px; }
-    body .card .card-header {
-      height: 30%;
-      background-image: url(/images/bg-pattern-card.svg);
-      background-size: contain;
-      border-radius: 12px 12px 0 0; }
-    body .card img {
-      border-radius: 50%;
-      border: 2px solid #fff;
-      position: relative;
-      top: -50px;
-      left: 30%; }
+  font-family: 'Kumbh Sans', sans-serif;
+  position: relative;
+}
+
+.back{
+ z-index: 0;
+ position: absolute;
+ width: 700px;
+ bottom: -300px;
+ right: -50px;
+}
+
+.back-two {
+  position:absolute;
+  width: 700px;
+  top: -300px;
+  left: -50px;
+  z-index: 0;
+}
+
+.card {
+  width: 400px;
+  height: 430px;
+  background-color: #fff;
+  border-radius: 13px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.178);
+}
+
+.card-header {
+  background-image: url(/images/bg-pattern-card.svg);
+  height: 30%;
+}
 
 .card-personal-info {
-  color: #505055; }
+  position: relative;
+  top: -50px;
+}
+
+.card-personal-info img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card-personal-info div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card-personal-info div h4 {
+  margin: 0;
+}
+
+.country,.card-personal-info-age, .card-social-info div p {
+  color: hsl(0, 0%, 59%);
+}
+
+.country, .card-social-info div p {
+  margin-top: 0.7em;
+  font-size: 0.8em;
+}
+
+.card-social-info div h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
 
 .card-social-info {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 1em; }
-  .card-social-info div {
-    text-align: center; }
-    .card-social-info div p {
-      font-size: .6em;
-      text-transform: uppercase;
-      color: #505055; }
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid #ccd0d154;
+}
 
-/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 375px) {
+  .back{
+    display: none;
+   }
+   
+   .back-two {
+     display: none;
+   }
+} 
